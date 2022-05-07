@@ -9,18 +9,20 @@
         <title>TRadeX</title>
     </head>
 
-    <body style="background-color: rgb(239, 236, 225);">
 
-        <header style="background: linear-gradient(120deg,rgb(237, 187, 79) 25% , rgba(53, 109, 122,0.9) 25%); margin:1% 0% 2% 0%; padding:3% 1% 3% 1%; ">
+    
+    <body style="background-color: rgb(255, 255, 255);">
+
+        <header style="background: linear-gradient(120deg,rgb(255, 188, 42) 25% , rgba(8, 125, 145, 0.9) 25%); margin:1% 0% 2% 0%; padding:3% 1% 3% 1%; ">
             <p style="display:inline; font-size: large; color: rgb(8, 102, 121); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left:7.5%;">TRade</p>
-            <p style="display:inline; font-weight: 700; color: rgb(75, 10, 9); padding-right:6%; font-size: x-large;">X</p>
+            <p style="display:inline; font-weight: 700; color: rgb(75, 10, 9); padding-right:6%; font-size: larger; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">X</p>
 
-            <nav style="display:inline; color:rgb(0, 0, 0); padding:0% 3.5% 0% 12%; font-family: Verdana, Geneva, Tahoma, sans-serif;"><small>Home</small></nav>
-            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 3.5%;" ><small>Index</small></nav>
-            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 3.5%;" ><small>Nifty50</small></nav>
-            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 3.5%;" ><small>Nifty100</small></nav>
-            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 3.5%;" ><small>Bank Nifty</small></nav>
-            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 3.5%;" ><small>About</small></nav>
+            <nav style="display:inline; color:rgb(255, 163, 25); padding:0% 3.5% 0% 12%; font-family: Verdana, Geneva, Tahoma, sans-serif;"><small>Home</small></nav>
+            <nav style="display:inline;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; padding-right: 3.5%;" ><small><button style="background-color:rgb(255, 188, 42); border:10px solid rgb(255, 188, 42);">Index</button></small></nav>
+            <nav style="display:inline;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; padding-right: 3.5%;" ><small><button style="background-color:rgb(255, 188, 42); border:10px solid rgb(255, 188, 42);">Nifty50</button></small></nav>
+            <nav style="display:inline;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; padding-right: 3.5%;" ><small><button style="background-color:rgb(255, 188, 42); border:10px solid rgb(255, 188, 42);">Nifty100</button></small></nav>
+            <nav style="display:inline;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; padding-right: 3.5%;" ><small><button style="background-color:rgb(255, 188, 42); border:10px solid rgb(255, 188, 42);">Bank Nifty</button></small></nav>
+            <nav style="display:inline;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; padding-right: 3.5%;" ><small><button style="background-color:rgb(255, 188, 42); border:10px solid rgb(255, 188, 42);">Sensex</button></small></nav>
         </header>
 
         <!--<div style="width:150px; height:680px; background-color: rgb(236, 187, 79); border-radius: 4px 4px 4px 4px; margin-left: 0.2%;">
@@ -30,36 +32,58 @@
             <nav style="display:block; font-family: Verdana, Geneva, Tahoma, sans-serif; position:relative; padding: 20px 0px 40px 35px;" >Bank Nifty</nav>
         </div>-->
 
-        <h3 style="padding-left:43%; padding-top: 2%;">Fill the information below</h3>
-        <form style="padding-left:43%; padding-top: 2%;">
-            <lable for="Index">Index:</lable>
+        <h3 style="padding-left:49%; padding-top: 0.5%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><small style="color: rgb(8, 125, 165);">Auto</small>Mate</h3>
+
+        <!--Form-->
+        
+        <form style="padding-left:43%; padding-top: 3%; border:2px solid rgba(31, 30, 25, 0.264); box-shadow:0px 0px 10px 10px rgba(67, 63, 61, 0.184); background-color: rgb(255, 255, 255); z-index:0;">
+            <lable for="Index" style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:rgb(28, 125, 165);"><small>Index</small></lable>
             <br>
-            <input list="Index" style="width:30%;">
+            <input list="Index" style="width:30%; border:1.5px solid rgb(255, 163, 25);">
             <datalist id="Index">
               <option value="Nifty50">
               <option value="Nifty100">
               <option value="Bank Nifty">
+              <option value="Sensex">
             </datalist>
+
             <br>
             <br>
-            <lable>Stocks:</lable>
+
+            <lable  style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:rgb(28, 125, 165);"><small>Stocks</small></lable>
             <br>
-            <input type="search" style="width:31%;">
+            <input type="search" style="width:31%; border:1.5px solid rgb(255, 163, 25);">
+
             <br>
             <br>
-            <lable>Target:</lable>
+
+            <lable  style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:rgb(28, 125, 165);"><small>Target</small></lable>
             <br>
-            0%<input type="range" min="0" max="25" style="width:28%;">25%
+            <sub  style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:rgb(255, 163, 25);">0%</sub><input type="range" min="0" max="25" style="width:28%;"><sub  style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:rgb(255, 163, 25);">25%</sub>
+
+            <br>
+            <br>
+
+            <!--<input type="button" style="width:30%;" value="Submit">
+            <br>-->
+            <button id="x" style="width:20%; position: relative; left:6.2%; background-color: rgb(28, 161, 184);  border:2px solid rgb(8, 125, 155);"><small style="  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:white;">Submit</small></button>
+
+            <br>
+            <br>
+
           </form>
 
 
+          <!--Some Background objects
+         <div style="width:5%; height:10%; background-color:rgb(8, 125, 165); position:fixed; top:30%; left:-0.5%;"></div>
+-->
 
-        <footer style="position:fixed; bottom:5%; background-color:rgb(53, 109, 122); width:64%; height:10%; padding: 4% 0% 4% 35%;">
+         <footer style="position:fixed; bottom:2%; background-color:rgb(8, 125, 145); width:61%; height:3%; padding: 4% 0% 4% 38%;">
 
-            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 8.5%; font-size: larger; color:aliceblue; position:relative; top:40%;" >Home</nav>
-            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 8.5%; color:aliceblue; position:relative; top:40%; font-size: larger;" >Contact Us</nav>
-            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 8.5%; color:aliceblue; position:relative; top:40%; font-size: larger;" >Help</nav>
+            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 8.5%; font-size: larger; color:aliceblue; position:relative; top:20%;" >Home</nav>
+            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 8.5%; color:aliceblue; position:relative; top:20%; font-size: larger;" >Contact Us</nav>
+            <nav style="display:inline; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 8.5%; color:aliceblue; position:relative; top:20%; font-size: larger;" >Help</nav>
 
-        </footer>
+         </footer>
     </body>
 </html>
